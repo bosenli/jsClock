@@ -1,4 +1,4 @@
-setInterval(setClock, 1000)
+setInterval(setClock, 1000)   //calls the function every 1000ms which is 1s
 
 const hourHand = document.querySelector('[data-hour-hand')
 const minuteHand = document.querySelector('[data-minutes-hand')

@@ -54,24 +54,9 @@ body {
     border: 1px solid white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transform-origin: bottom;
+    transform-origin: bottom;    /*keeps the hands rotate centered at origin*/
     z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-}
-
-
-
-.clock::after {
-    content: '';
-    position: absolute;
-    background-color: black;
-    width: 15px;
-    height: 15px;
-    z-index: 11;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
 }
 
 
@@ -94,4 +79,19 @@ body {
     height: 30%;
     background-color: rgb(245, 8, 47);
    
+}
+
+
+/*this is for dot*/
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
